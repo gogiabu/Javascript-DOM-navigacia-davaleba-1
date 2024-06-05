@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>Javascript-DOM ნავიგაცია-დავალება 1</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding: 20px 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"> <p id="text">დათვის ყეფა</p></div>
+    
+    <script>
+        var boxes = document.getElementsByClassName("box");
+        boxes[0].innerHTML = "საქართველო"
+        boxes[3].innerHTML = "გრილი ნიავი"
+
+        const myElement = document.getElementById("text");
+              myElement.style.backgroundColor = "red";
+
+
+
+    </script>
+</body>
+</html>
